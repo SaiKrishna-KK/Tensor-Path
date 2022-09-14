@@ -1,0 +1,20 @@
+mkdir tensorflow_folder
+
+cd tensorflow_folder
+
+conda create --prefix ./env
+
+conda activate ./env 
+
+conda install -c apple tensorflow-deps 
+
+python3 -m pip install tensorflow-macos 
+
+python3 -m pip install tensorflow-metal
+
+python3 -m pip install tensorflow-datasets 
+
+conda install jupyter pandas numpy matplotlib scikit-learn
+
+jupyter notebook
+
