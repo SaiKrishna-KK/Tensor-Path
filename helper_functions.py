@@ -99,7 +99,8 @@ def show_path(file_name):
 
 def print_classes(file_loc):
   """
-  Prints all the class names, when the data is stored in the form of directories
+  Prints all the class names, when the data is stored in the form of directories.
+  Parameters
   ----------
   file_loc(str): String file location path
   """
