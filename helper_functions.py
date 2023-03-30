@@ -1,4 +1,5 @@
 
+#Use from helper_functions import load_and_prep, view_random, plot_history, unzip, show_path, print_classes, createModel
 
 def load_and_prep(file_loc, img_shape = 224, scale = True):
   """
@@ -19,7 +20,7 @@ def load_and_prep(file_loc, img_shape = 224, scale = True):
   else:
     return img
 
-def view_random(target_dir+'/', target_class):
+def view_random(target_dir, target_class):
   """
   Reads in an image from trage directory and the target class and plots a random image. 
   Parameters
@@ -31,7 +32,7 @@ def view_random(target_dir+'/', target_class):
   import random, os
   import matplotlib.image as mpimg
   import matplotlib.pyplot as plt
-  target_folder = target_dir+target_class
+  target_folder = target_dir+'/'+target_class
   rand_image = random.sample(os.listdir(target_folder),1)
   img = mpimg.imread(target_folder+'/'+rand_image[0])
   plt.imshow(img)
